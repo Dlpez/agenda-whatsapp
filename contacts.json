@@ -1,0 +1,13 @@
+[
+  {
+    "nombre": "Juan Pérez",
+    "alias": ["Juan", "Juancho"],
+    "email": "juan.perez@ejemplo.com",
+    "whatsapp": "56911111111"
+  },
+  {
+    "nombre": "María González",
+    "alias": ["Mari", "la profe"],
+    "email": "maria.gonzalez@ejemplo.com"
+  }
+]
