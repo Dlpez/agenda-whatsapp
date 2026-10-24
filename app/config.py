@@ -40,7 +40,9 @@ class Settings:
     TRANSCRIBE_MODEL = _opt("TRANSCRIBE_MODEL", "whisper-large-v3-turbo")
 
     # --- Google Calendar ---
-    GOOGLE_TOKEN_JSON = _opt("GOOGLE_TOKEN_JSON")  # contenido de token.json (lo genera scripts/google_auth.py)
+    GOOGLE_TOKEN_JSON = _opt("GOOGLE_TOKEN_JSON")  # lo entrega la página /google/login del bot
+    GOOGLE_CLIENT_ID = _opt("GOOGLE_CLIENT_ID")    # cliente OAuth tipo "Aplicación web"
+    GOOGLE_CLIENT_SECRET = _opt("GOOGLE_CLIENT_SECRET")
     CALENDAR_ID = _opt("CALENDAR_ID", "primary")
     TIMEZONE = _opt("TIMEZONE", "America/Santiago")
     DEFAULT_DURATION_MIN = int(_opt("DEFAULT_DURATION_MIN", "60"))

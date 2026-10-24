@@ -8,6 +8,7 @@ from fastapi.responses import PlainTextResponse
 from . import whatsapp as wa
 from .agent import handle_message
 from .config import settings
+from .google_setup import router as google_router
 from .reminders import run_reminders
 from .transcribe import transcribe
 
@@ -15,6 +16,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(name)s %(levelname
 log = logging.getLogger("main")
 
 app = FastAPI(title="Agenda por WhatsApp")
+app.include_router(google_router)
 _seen: deque[str] = deque(maxlen=500)  # Meta a veces reenvía el mismo mensaje
 
 

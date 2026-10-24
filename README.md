@@ -69,6 +69,8 @@ Necesitas: Python 3.11+, Git, una cuenta de GitHub y tu cuenta de Google.
    Se abre el navegador; eliges tu cuenta y aceptas (aparece un aviso de "app no verificada": es tu propia app, dale *Continuar*). Se crea `token.json`.
 6. ⚠️ **Importante:** mientras la app esté en modo *Prueba*, Google invalida el permiso cada 7 días. Para que no pase, en la pantalla de consentimiento presiona **Publicar app** (pasa a *En producción*; no necesitas verificarla para uso propio) y repite el paso 5.
 
+> **Alternativa sin instalar nada:** crea el cliente OAuth como **Aplicación web** con la redirección `https://TU-APP.onrender.com/google/callback`, pon `GOOGLE_CLIENT_ID` y `GOOGLE_CLIENT_SECRET` en Render y abre `https://TU-APP.onrender.com/google/login`. La página te muestra el texto para `GOOGLE_TOKEN_JSON`.
+
 ### 3. WhatsApp (Meta)
 
 1. Entra a <https://developers.facebook.com> → **Mis apps → Crear app →** caso de uso *Otro* → tipo **Negocios**.
